@@ -1,0 +1,426 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('../embedded-opentype'), url('../fonts/icomoon.ttf?tomleg') format('truetype'), url('../fonts/icomoon.woff?tomleg') format('woff'), url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 2364203 */
+    src: url('//at.alicdn.com/t/font_2364203_05y9ca5hgj9d.eot');
+    src: url('//at.alicdn.com/t/font_2364203_05y9ca5hgj9d.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_2364203_05y9ca5hgj9d.woff2') format('woff2'), url('//at.alicdn.com/t/font_2364203_05y9ca5hgj9d.woff') format('woff'), url('//at.alicdn.com/t/font_2364203_05y9ca5hgj9d.ttf') format('truetype'), url('//at.alicdn.com/t/font_2364203_05y9ca5hgj9d.svg#iconfont') format('svg');
+}
+
+body {
+    color: #666;
+    font-size: 12px;
+}
+
+.iconfont {
+    font-family: 'icomoon', 'iconfont';
+}
+
+.style-red {
+    color: #c81623;
+}
+
+/* 快捷导航 */
+
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+    font-size: 12px;
+}
+
+.shortcut ul li {
+    position: relative;
+    float: left;
+}
+
+.shortcut .fl {
+    float: left;
+    color: #666;
+}
+
+.shortcut .fr {
+    float: right;
+    color: #666;
+}
+
+.shortcut .fr ul li {
+    position: relative;
+    margin: 0 7px;
+}
+
+.shortcut .fr ul .cw-icon {
+    margin-right: 13px;
+}
+
+.shortcut .fr ul .spacer {
+    height: 12px;
+    width: 1px;
+    margin-top: 9px;
+    border-left: 1px solid #666;
+}
+
+.shortcut .fr .iconfont {
+    position: absolute;
+    top: 1px;
+    right: -2px;
+    content: '\e91e';
+    font-size: 12px;
+    font-family: 'icomoon';
+}
+
+/* 快捷导航 end*/
+
+/* header 头部模块 start */
+
+.header {
+    position: relative;
+    height: 105px;
+}
+
+.header .logo {
+    position: absolute;
+    top: 50%;
+    margin-top: -28px;
+    left: 0px;
+    width: 175px;
+    height: 56px;
+    background: url(https://s3.ax1x.com/2021/02/12/yDq2cj.png) no-repeat;
+}
+
+.header .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.header .main {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    width: 538px;
+    margin-left: -269px;
+    position: relative;
+}
+
+.header .search input {
+    float: left;
+    width: 456px;
+    height: 36px;
+    border: 2px solid #E1251B;
+    border-right: none;
+    background-color: #fff;
+    text-indent: 1em;
+}
+
+.header .search button {
+    float: left;
+    width: 82px;
+    height: 36px;
+    background: #E1251B;
+    color: #fff;
+    font-size: 16px;
+    transition: all .2s;
+}
+
+.header .search button:hover {
+    background-color: #c81623;
+}
+
+.header .main .hotwords {
+    font-size: 12px;
+    color: #666;
+}
+
+.header .main .hotwords ul li {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.header .main .hotwords ul li:first-child a {
+    color: #c81623;
+}
+
+.shopcae {
+    position: absolute;
+    top: 25px;
+    right: 64px;
+    width: 140px;
+    height: 36px;
+    border: 1px solid #E7E7E7;
+    background-color: #F7F7F7;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+
+.shopcae:hover {
+    border: 1px solid #c81623;
+    color: #c81623;
+}
+
+.header .shopcae .iconfont:first-child {
+    position: relative;
+    font-size: 18px;
+}
+
+.header .shopcae .iconfont {
+    position: relative;
+    top: 1px;
+}
+
+.header .shopcae .number {
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    left: 125px;
+    height: 14px;
+    padding: 0 4px;
+    border-radius: 7px 7px 7px 0;
+    background-color: #E60012;
+    text-align: center;
+    line-height: 14px;
+    font-size: 12px;
+    color: #fff;
+}
+
+/* header 头部模块 end */
+
+/* 导航栏 nav start */
+
+nav {
+    height: 47px;
+    border-bottom: 3px solid #c81623;
+}
+
+nav .nav-items ul {
+    float: left;
+}
+
+nav .nav-items ul li {
+    float: left;
+    color: #333;
+}
+
+nav .nav-items ul li a {
+    display: inline-block;
+    height: 45px;
+    padding: 0px 26px;
+    font-size: 16px;
+    line-height: 45px;
+}
+
+/* 导航栏 nav end */
+
+/* 尾部 footer start */
+
+footer {
+    position: relative;
+    padding-bottom: 50px;
+    background-color: #F5F5F5;
+}
+
+footer .mod-service {
+    padding: 30px 0;
+    border-bottom: 1px solid #dedede;
+}
+
+footer .mod-service ul {
+    height: 42px;
+    margin-left: 0px;
+}
+
+footer .mod-service ul li {
+    float: left;
+    width: 297px;
+    text-align: center;
+}
+
+footer .mod-service ul li .iconfont {
+    margin-right: 5px;
+    font-size: 42px;
+    line-height: 42px;
+    vertical-align: middle;
+}
+
+footer .mod-service ul li span {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #444;
+    vertical-align: middle;
+}
+
+footer .mod-help {
+    position: relative;
+    padding: 20px 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #dedede;
+}
+
+footer .mod-help .mod-help-inner {
+    height: 160px;
+}
+
+footer .mod-help .mod-help-nav {
+    float: left;
+    width: 198px;
+    line-height: 22px;
+    color: #666;
+}
+
+footer .mod-help .mod-help-nav dt {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+footer .mod-help .mod-help-nav dd {
+    font-size: 12px;
+}
+
+footer .mod-help .contact {
+    float: left;
+    width: 252px;
+    height: 110;
+    margin-left: -65px;
+    border-left: 1px solid #dedede;
+    text-align: center;
+}
+
+footer .mod-help .contact .phone {
+    color: #c81623;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+footer .mod-help .contact p {
+    color: #616161;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+footer .mod-help .contact a {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #c81623;
+    line-height: 24px;
+    font-size: 12px;
+    color: #c81623;
+    vertical-align: middle;
+    transition: all .3s;
+}
+
+footer .mod-help .contact a .iconfont {
+    font-size: 15px;
+}
+
+footer .mod-help .contact a:hover {
+    background-color: #c81623;
+    color: #fff;
+}
+
+footer .mod-help .contact .follow {
+    position: relative;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 23px;
+}
+
+footer .mod-help .contact .follow em {
+    vertical-align: middle;
+}
+
+footer .mod-help .contact .follow a {
+    display: inline-block;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: none;
+    font-size: 23px;
+    color: #757575;
+    vertical-align: middle;
+}
+
+footer .mod-help .contact .follow .qr {
+    display: none;
+    position: absolute;
+    top: 42px;
+    left: 75px;
+    width: 136px;
+    height: 136px;
+    z-index: 1;
+    border: 1px solid #dedede;
+    background-color: #fff;
+}
+
+footer .mod-help .contact .follow .qr::before {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    margin-left: -10px;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+}
+
+footer .mod-help .contact .follow a:hover+.qr {
+    display: block;
+}
+
+footer .mod-help .contact .follow .qr img {
+    width: 94%;
+    margin-top: 3%;
+}
+
+footer .mod-help .contact .follow a:hover {
+    background-color: transparent;
+    color: #c81623;
+}
+
+footer .mod-copyright .mod-copyright-links ul li {
+    float: left;
+}
+
+footer .mod-copyright {
+    padding: 15px 0;
+}
+
+footer .mod-copyright .mod-copyright-inner {
+    text-align: center;
+}
+
+footer .mod-copyright .mod-copyright-inner .mod-copyright-links {
+    display: inline-block;
+    height: 12px;
+    line-height: 12px;
+}
+
+footer .mod-copyright .mod-copyright-links .spacer {
+    width: 1px;
+    height: 12px;
+    margin: 0px 10px 0;
+    border-left: 1px solid #ccc;
+}
+
+footer .mod-copyright .mod-copyright-info {
+    margin-top: 10px;
+    color: #999;
+}
+
+/* 尾部 footer end */
