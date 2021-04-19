@@ -3,7 +3,7 @@ var min = document.querySelector('.timer-minute')
 var sec = document.querySelector('.timer-second')
 setTimeout(countDown, 0)
 
-var inputTime = +new Date('2021-4-20 20:00:00')
+var inputTime = +new Date('2021-4-22 14:00:00')
 function countDown() {
     var nowTime = +new Date()
     var times = (inputTime - nowTime) / 1000
