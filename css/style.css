@@ -1,0 +1,649 @@
+/* nav 导航板块 start */
+nav h2 {
+  float: left;
+  width: 209px;
+  height: 45px;
+  background-color: #B1191A;
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+}
+/* nav 导航板块 end */
+/* main板块 start */
+.main-inner {
+  position: relative;
+  margin-bottom: 30px;
+}
+.main-inner .main-col1 {
+  float: left;
+  width: 209px;
+  height: 465px;
+  margin-right: 10px;
+  border: 1px solid #C81623;
+  border-top: 0;
+  background-color: #fff;
+}
+.main-inner .main-col1 ul {
+  padding-top: 9px;
+  padding-bottom: 6px;
+}
+.main-inner .main-col1 ul li {
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+}
+.main-inner .main-col1 ul li a {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding-left: 25px;
+  transition: all 0.3s;
+}
+.main-inner .main-col1 ul li a::after {
+  position: absolute;
+  right: 15px;
+  content: '\e920';
+  font-family: 'icomoon';
+  font-size: 14px;
+  transition: all 0.3s;
+}
+.main-inner .main-col1 ul li a:hover::after {
+  position: absolute;
+  right: 10px;
+  color: #fff;
+}
+.main-inner .main-col1 ul li a:hover {
+  padding-left: 30px;
+  color: #fff;
+  background-color: #B1191A;
+}
+.main-inner .main-col2 {
+  position: relative;
+  float: left;
+  width: 721px;
+  height: 455px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.control {
+  display: none;
+  width: 23px;
+  height: 35px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.15);
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  transition: all 0.2s;
+}
+.control:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -18px;
+  border-radius: 0 17px 17px 0;
+}
+.prev i {
+  position: relative;
+  left: -6px;
+}
+.next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -18px;
+  border-radius: 17px 0 0 17px;
+}
+.next i {
+  position: relative;
+  left: -2px;
+}
+.pm-service {
+  position: relative;
+}
+.JS_popCtn {
+  position: absolute;
+  top: 0;
+  left: 210px;
+  z-index: 3;
+  width: 730px;
+  min-height: 100%;
+  border: 1px solid #f7f7f7;
+  background-color: pink;
+}
+.JS_popCtn div {
+  display: none;
+}
+.main-inner .main-col2 .pm-banner:hover .button .control {
+  display: block;
+}
+.main-inner .main-col2 .pm-banner .indicators {
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  width: 118px;
+  height: 15px;
+}
+.main-inner .main-col2 .pm-banner .indicators li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.main-inner .main-col2 .pm-banner .indicators li:nth-child(3) {
+  position: relative;
+  top: -3px;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.main-inner .main-col2 .pm-banner .indicators li:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.main-inner .main-col3 {
+  float: left;
+  margin-top: 10px;
+  width: 250px;
+  height: 375px;
+  border: 1px solid #E4E4E4;
+}
+.main-inner .main-col3 .p-user {
+  position: relative;
+  height: 80px;
+}
+.main-inner .main-col3 .p-user::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 250px;
+  background: linear-gradient(270deg, white, #eeeeee, #eeeeee, white);
+}
+.main-inner .main-col3 .p-user .user-fl {
+  float: left;
+  position: relative;
+  top: 50%;
+  left: 15px;
+  width: 160px;
+  margin-top: -24px;
+}
+.main-inner .main-col3 .p-user .user-fl .p-avatar {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.main-inner .main-col3 .p-user .user-fl .p-avatar img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.main-inner .main-col3 .p-user .user-fl .user-info {
+  position: relative;
+  float: left;
+  margin-top: 5px;
+}
+.main-col3 .p-user .user-fl .user-info p,
+.main-col3 .p-user .user-fl .user-info p a {
+  color: #000;
+}
+.main-col3 .p-user .user-fl .user-info p a:hover {
+  color: #C81623;
+}
+.main-col3 .p-user .user-fl .user-info::after {
+  position: absolute;
+  right: -6px;
+  top: -10px;
+  content: '';
+  width: 1px;
+  height: 58px;
+  background: linear-gradient(180deg, white, #eeeeee, #eeeeee, white);
+}
+.main-inner .main-col3 .p-user .user-fr {
+  float: right;
+  width: 90px;
+  margin-top: -17px;
+  text-align: center;
+}
+.main-inner .main-col3 .p-user .user-fr button {
+  display: inline-block;
+  margin: 0 5px;
+  width: 70px;
+  height: 25px;
+  margin-top: 10px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 13px;
+  background: #e1251b;
+  transition: all 0.3s;
+}
+.main-inner .main-col3 .p-user .user-fr button:hover {
+  background-color: #C81623;
+}
+.main-inner .main-col3 .p-user .user-fr button:hover a {
+  color: #fff;
+}
+.main-inner .main-col3 .p-user .user-fr button a {
+  color: #fff;
+}
+.main-inner .main-col3 .p-user .user-fr .plus a {
+  color: #e5d790;
+}
+.main-inner .main-col3 .p-user .user-fr .plus {
+  background: #363634;
+  color: #e5d790;
+}
+.main-inner .main-col3 .p-news {
+  height: 114px;
+}
+.main-inner .main-col3 .p-news .news-hd {
+  height: 26px;
+  line-height: 26px;
+}
+.main-inner .main-col3 .p-news h5 {
+  float: left;
+  font-size: 14px;
+  margin-left: 15px;
+  color: #000;
+}
+.main-inner .main-col3 .p-news p {
+  float: right;
+}
+.main-inner .main-col3 .p-news .news-bd {
+  float: left;
+}
+.main-inner .main-col3 .p-news .news-bd ul {
+  margin: 0 15px;
+}
+.main-inner .main-col3 .p-news .news-bd ul li {
+  width: 215px;
+  height: 16px;
+  margin-bottom: 6px;
+  color: #999;
+}
+.main-inner .main-col3 .p-news .news-bd ul li span {
+  display: inline-block;
+  width: 35px;
+  height: 16px;
+  margin-right: 6px;
+  background-color: rgba(225, 37, 27, 0.08);
+  color: #e1251b;
+  text-align: center;
+}
+.main-inner .main-col3 .p-news .news-bd p {
+  float: left;
+  width: 215px;
+  line-height: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.main-inner .main-col3 .p-service {
+  height: 180px;
+}
+.main-inner .main-col3 .p-service li {
+  float: left;
+  width: 25%;
+  height: 60px;
+  padding-top: 5px;
+  border: 1px solid #f4f4f4;
+  text-align: center;
+}
+.main-inner .main-col3 .p-service li .service-icon-hover {
+  position: relative;
+  top: -31.2px;
+  margin-bottom: -31.2px;
+}
+.main-inner .main-col3 .p-service li a {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+}
+.main-inner .main-col3 .p-service li a:hover .service-icon-hover {
+  position: relative;
+  top: -31.2px;
+}
+.main-inner .main-col3 .p-service li a:hover .service-icon {
+  position: relative;
+  top: -31.2px;
+}
+.main-inner .main-col3 .p-service li .service-icon {
+  position: relative;
+  top: 0;
+  display: block;
+  width: 60px;
+  font-size: 28px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.icon-space {
+  overflow: hidden;
+  position: relative;
+  height: 32px;
+  width: 60px;
+}
+.main-inner .main-col3 .p-service li .service-icon-hover {
+  position: relative;
+  top: 10px;
+  z-index: -1;
+  font-size: 28px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.main-inner .main-adv {
+  float: left;
+  margin-top: 5px;
+  width: 250px;
+  height: 75px;
+}
+/* main板块 end */
+/* 秒杀板块 start */
+.seckill {
+  position: relative;
+  height: 260px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.seckill .seckill-countdown {
+  float: left;
+  width: 190px;
+  height: 100%;
+  background: url(https://s3.ax1x.com/2021/02/12/yDqc9g.png) no-repeat;
+  background-size: contain;
+  text-align: center;
+  color: #fff !important;
+}
+.seckill .seckill-countdown h4 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 31px;
+}
+.seckill-countdown a {
+  color: #fff;
+}
+.seckill-countdown a:hover {
+  color: #fff;
+}
+.seckill .seckill-countdown .time {
+  margin-top: 90px;
+}
+.seckill .seckill-countdown .time .countdown {
+  margin-bottom: 10px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.seckill .seckill-countdown .time .countdown em {
+  display: inline-block;
+  margin-top: -3px;
+  margin-right: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.timer-hour,
+.timer-minute,
+.timer-second {
+  height: 30px;
+  width: 30px;
+  background-color: #2f3430;
+  font-size: 20px;
+}
+.timer-hour,
+.timer-minute {
+  position: relative;
+  margin-right: 20px;
+}
+.timer-hour::after,
+.timer-minute::after {
+  position: absolute;
+  right: -15px;
+  top: -2px;
+  content: ':';
+  font-weight: bolder;
+  font-size: 18px;
+}
+.seckill .goods {
+  position: relative;
+  float: left;
+  width: 800px;
+  height: 100%;
+}
+.seckill .goods ul li {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 260px;
+  padding: 0 20px;
+}
+.seckill .goods ul li::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -75px;
+  height: 150px;
+  width: 1px;
+  background: linear-gradient(180deg, white, #eeeeee, #eeeeee, white);
+}
+.seckill .goods ul li img {
+  position: relative;
+  height: 140px;
+  width: 140px;
+}
+.seckill .goods ul li .pic {
+  position: relative;
+  height: 140px;
+  width: 140px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.seckill .goods ul li a {
+  display: block;
+  overflow: hidden;
+  margin-left: -20px;
+  padding-left: 20px;
+  width: 200px;
+  height: 260px;
+  text-align: center;
+}
+.seckill .goods ul li .pic::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: '';
+  width: 140px;
+  height: 140px;
+  background: rgba(255, 255, 255, 0);
+  transition: all 0.4s;
+}
+.seckill .goods ul li a:hover .pic::after {
+  background: rgba(255, 255, 255, 0.2);
+}
+.seckill .goods ul li p {
+  width: 160px;
+  margin-top: 13px;
+  overflow: hidden;
+  font-weight: 400;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: all 0.2s;
+}
+.seckill .goods ul li a {
+  color: #999;
+}
+.seckill .goods ul li .price {
+  width: 160px;
+  height: 24px;
+  margin-top: 7px;
+  border: 1px solid #e1251b;
+  line-height: 24px;
+}
+.seckill .goods ul li .price .price-new {
+  position: relative;
+  float: left;
+  width: 99px;
+  height: 22px;
+  background-color: #e1251b;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.seckill .goods ul li .price .price-new::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: '';
+  border-top: 22px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid #fff;
+}
+.seckill .goods ul li .price .price-old {
+  text-align: center;
+  text-decoration: line-through;
+}
+.seckill .goods ul li:hover p {
+  color: #e1251b;
+}
+.seckill .goods:hover .button .control {
+  display: block;
+}
+.seckill .recommend {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 100%;
+  margin-left: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.seckill .recommend .inner {
+  height: 100%;
+  background: linear-gradient(180deg, #fff, #fff, #EEF0F6);
+}
+.seckill .recommend img {
+  width: 120px;
+  margin-top: 15px;
+}
+.seckill .recommend p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.seckill .recommend h5 {
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+}
+.seckill .recommend button {
+  width: 82px;
+  height: 24px;
+  margin-top: 5px;
+  border: 1px solid #e1251b;
+  border-radius: 14px;
+  background-color: transparent;
+  color: #e1251b;
+  line-height: 20px;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+.seckill .recommend button:hover {
+  background-color: #e1251b;
+  color: #E4E4E4;
+}
+.seckill .recommend ol {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  margin-left: -6px;
+}
+.seckill .recommend ol li {
+  float: left;
+  width: 4px;
+  height: 4px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: #999;
+}
+.seckill .recommend ol li:first-child {
+  background-color: #e1251b;
+}
+/* 秒杀模块 end */
+/* 侧边栏 start */
+.seckill-outer {
+  position: relative;
+}
+.elevator {
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  margin-left: 635px;
+  border: 2px solid #e0e0e0;
+  width: 58px;
+  z-index: 10;
+  background-color: #fff;
+}
+.elevator ul li {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+.elevator ul li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 11px;
+  height: 1px;
+  width: 35px;
+  background: linear-gradient(270deg, white, #eeeeee, #eeeeee, white);
+  transition: all 0.15s;
+}
+.elevator ul li:last-child::after {
+  display: none;
+}
+.elevator ul li a {
+  display: block;
+  height: 100%;
+  padding: 10px;
+  line-height: 19px;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.15s;
+}
+.elevator ul li a:hover {
+  background-color: #C81623;
+  color: #fff;
+}
+.elevator ul li:hover::after {
+  display: none;
+}
+/* 侧边栏 end */
