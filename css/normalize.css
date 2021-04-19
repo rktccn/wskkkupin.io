@@ -1,0 +1,96 @@
+HTML, main, body, div, h1, a, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td, header, nav, article, footer {
+    border: none;
+    font-family: "????", "??", "??";
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var, i {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: #c81623;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+input::-ms-reveal {
+    display: none;
+}
+
+input {
+    -webkit-appearance: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+
+/* --??baidu???zhi????daozhuan?search??? */
+
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+/* --??IE???search??? */
+
+input[type=search]::-ms-clear {
+    display: none;
+}
+
+input::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+input::-ms-input-placeholder {
+    color: #ccc;
+}
+
+input::-moz-placeholder {
+    color: #ccc;
+}
+
+input[type=submit], input[type=button] {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+img {
+    border: none;
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+/*????*/
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
